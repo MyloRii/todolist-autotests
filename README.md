@@ -2,10 +2,10 @@
 
 In order to run automation tests locally you’ll need these tools on your local machine:
 
-- [Git]
-- [VS Code]
-- [Node.js]
-- [Docker Desktop](Optional) - to run tests inside docker
+- Git
+- VS Code
+- Node.js
+- Docker Desktop - to run tests inside docker(optional)
 
 ## Installation
 
@@ -32,7 +32,7 @@ docker build -t auto .
 docker run auto npm test
 ```
 
-NOTE: Tests are run in headless mode by default. To see browser windows with test executing, set the env variable:
+NOTE: Tests are run using 4 browser instances in parallel and in headless mode by default. To see browser windows with test executing, set the env variable:
 ```sh
 export HEADLESS=false
 ```
